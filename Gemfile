@@ -5,9 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "~> 3.4.0"
 
-gem "rails", "7.2.2.1"
-
-gem "ostruct"
+gem "rails", "8.0.1"
 
 gem "aasm"
 gem "acts_as_list"
@@ -29,6 +27,7 @@ gem "importmap-rails"
 gem "jbuilder"
 gem "jquery-rails"
 gem "jquery-ui-rails"
+gem "kamal", require: false
 gem "kaminari"
 gem "mutex_m"
 gem "nokogiri"
@@ -39,13 +38,19 @@ gem "phonelib"
 gem "prawn"
 gem "prawn-svg"
 gem "prawn-table"
-gem "puma", ">= 5.0"
+gem "propshaft"
+gem "puma", ">= 6.0"
 gem "rails-html-sanitizer"
 gem "rails-i18n"
 gem "sassc-rails" # TODO
+gem "solid_cache"
+gem "solid_queue"
+gem "solid_cable"
 gem "sprockets-rails"
 gem "stimulus-rails"
+gem "thruster", require: false
 gem "turbo-rails"
+gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "webauthn"
 
 group :development, :test do
